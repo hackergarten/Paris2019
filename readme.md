@@ -18,7 +18,7 @@ If you feel unsafe, please find one of the organizers and we will help you and a
 
 ## Projects
 
-
+![](https://secure.meetupstatic.com/photos/event/a/8/f/e/600_427783262.jpeg)
 
 ## Organizers
 
