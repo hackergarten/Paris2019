@@ -13,6 +13,8 @@ It is an inclusive, open, non-profit event, aimed at collaboration and education
 We value the right of every attendee to be not discriminated or harrassed. 
 If you feel unsafe, please find one of the organizers and we will help you and address the issue with the other party.
 
+Our [Code of Conducts](code-of-conduct) details the rules we stand by.
+
 ## Venue: Paris
 
 
