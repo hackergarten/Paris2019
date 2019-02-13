@@ -1,0 +1,175 @@
+---
+---
+
+@charset "utf-8";
+
+// Example Defaults
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+$spacing-unit:     3vw;
+
+$secondary-color:	#5AC598;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// variables.less
+$theme-primary: #F05F40;
+$theme-dark: #222;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base"
+;
+
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+	&, &:hover, &:active, &:focus, &:visited {
+		outline: 0;
+	}
+
+	&:focus {
+		color: white;
+		border-bottom: 2px solid $secondary-color !important;
+	}
+}
+
+hr.light {
+	border-color: $secondary-color;
+}
+
+header, section:not(#agenda) {
+	& {
+		display: flex;
+		min-height: 100%;
+		align-items: center !important;
+	}
+}
+
+
+.fa-twitter {
+	color: #1da1f2 !important;
+}
+
+.fa-twitter + p {
+	color: white;
+}
+
+
+#mainNav {
+	& {
+		border: none;
+		background-color: transparent;
+		color: white;
+	}
+
+	& a {
+		& {
+			color: white !important;
+		}
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
+
+#about, #tickets, #contact {
+	background-color: #f05f40;
+	color: white;
+}
+
+#agenda, #coc {
+	& {
+		background-color: #31357a;
+	}
+	&, & .text-muted {
+		color: white;
+	}
+}
+
+header .header-content {
+	& {
+		padding: 0;
+	}
+
+	& .header-content-inner {
+		& {
+			width: 100%;
+			max-width: inherit;
+		}
+
+		* {
+			text-transform: uppercase;
+		}
+
+		h1 { 
+			font-size: 4 / 3 * $spacing-unit !important;
+			font-weight: normal;
+			padding-bottom: $spacing-unit;
+		}
+
+		h2 {
+			font-size: 5 / 6 * $spacing-unit;
+		}
+
+		hr {
+			border-color: $secondary-color;
+		}
+
+		.btn {
+			color: white;
+			border-radius: 0;
+		}
+
+		.btn-primary {
+			background-color: $secondary-color;
+		}
+
+		@media screen and (min-width: 372px) {
+			.btn-primary {
+				border: 2px solid $secondary-color;
+				margin-right: $spacing-unit / 2;
+			}
+		}
+
+		.btn-secondary {
+			background-color: transparent;
+			border: 2px solid white;
+		}
+
+		@media screen and (max-width: 371px) {
+			.btn-primary {
+				margin-right: 0;
+				margin-bottom: $spacing-unit / 2;
+			}
+		}
+	}
+}

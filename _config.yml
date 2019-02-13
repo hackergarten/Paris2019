@@ -1,1 +1,15 @@
-theme: jekyll-theme-hacker
+# Site settings
+title: hack.commit.push
+email:
+description: |
+  hack.commit.push
+  Paris JUNE 15, 2019
+  The 1st hackergarten conference
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
