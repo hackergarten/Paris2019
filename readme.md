@@ -4,7 +4,7 @@
 
 ## What is this about?
 
-In the spirit of [the Hackergarten events](http://hackergarten.net/), we want to invite developers this summer to beautiful Paris to get together supporting open source projects by fixing issues and adding new features and most of all learn and have fun.
+In the spirit of [the Hackergarten events](http://hackergarten.net/), we want to invite developers this summer to beautiful Paris to get a full day together supporting open source projects, by fixing issues and adding new features. And most of all, learn and have fun.
 
 ## Code of Conduct
 
