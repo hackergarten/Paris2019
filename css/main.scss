@@ -56,7 +56,16 @@ a {
 
 	&:focus:not(#logo-link) {
 		color: white;
-		border-bottom: 2px solid $secondary-color !important;
+		border-bottom: 2px solid $theme-primary !important;
+	}
+}
+
+#bs-example-navbar-collapse-1 {
+	border: none;
+	text-align: right;
+
+	li {
+		height: 5vh;
 	}
 }
 
@@ -102,7 +111,7 @@ header, section:not(#agenda) {
 
 
 #about, #tickets, #contact {
-	background-color: #f05f40;
+	background-color: #5AC598;
 	color: white;
 }
 
