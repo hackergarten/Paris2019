@@ -54,7 +54,7 @@ a {
 		outline: 0;
 	}
 
-	&:focus {
+	&:focus:not(#logo-link) {
 		color: white;
 		border-bottom: 2px solid $secondary-color !important;
 	}
