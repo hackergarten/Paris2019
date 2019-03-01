@@ -81,13 +81,27 @@ header, section:not(#agenda) {
 	}
 }
 
+#contact {
 
-.fa-twitter {
-	color: #1da1f2 !important;
-}
+	a {
+		display: block;
 
-.fa-twitter + p {
-	color: white;
+		img {
+			background-color: white;
+			border: 2px solid #31357a;
+			display: inline-block;
+			margin-bottom: 3vh;
+		}
+	}
+
+	& .container-fluid .row:last-child {
+		div:last-child {
+			a img:last-child {
+				margin: 0;
+			}
+		}
+	}
+	
 }
 
 
