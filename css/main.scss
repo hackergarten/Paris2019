@@ -3,41 +3,13 @@
 
 @charset "utf-8";
 
-// Example Defaults
-// $base-font-family: Helvetica, Arial, sans-serif;
-// $base-font-size:   16px;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
-
-$spacing-unit:     3vw;
-
-$secondary-color:	#5AC598;
-
-// $text-color:       #111;
-// $background-color: #fdfdfd;
-// $brand-color:      #2a7ae2;
-
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-
-// // Width of the content area
-// $content-width:    800px;
-
-// $on-palm:          600px;
-// $on-laptop:        800px;
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-// variables.less
-$theme-primary: #F05F40;
-$theme-dark: #222;
+$spacing-unit:     	3vw;
+$theme-primary: 	#5AC598;
+$secondary-color:	#31357a;
+$theme-dark: 		#222;
+$text-color:		white;
+$border-color:		white;
+$pic-bg-color:		white;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -45,32 +17,31 @@ $theme-dark: #222;
         "base"
 ;
 
-body {
+body > * {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 a {
-	&, &:hover, &:active, &:focus, &:visited {
+	&, &:hover, &:active, &:focus, &:visited { 
 		outline: 0;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color: transparent;
 	}
 
 	&:focus:not(#logo-link) {
-		color: white;
-		border-bottom: 2px solid $theme-primary !important;
+		color: $text-color;
 	}
 }
+
+.text-primary { color: $text-color;}
+
+hr { border-color: $border-color;}
 
 #bs-example-navbar-collapse-1 {
 	border: none;
 	text-align: right;
 
-	li {
-		height: 5vh;
-	}
-}
-
-hr.light {
-	border-color: $secondary-color;
+	li { height: 5vh;}
 }
 
 header, section:not(#agenda) {
@@ -82,13 +53,12 @@ header, section:not(#agenda) {
 }
 
 #contact {
-
 	a {
 		display: block;
 
 		img {
-			background-color: white;
-			border: 2px solid #31357a;
+			background-color: $pic-bg-color;
+			border: 2px solid $secondary-color;
 			display: inline-block;
 			margin-bottom: 3vh;
 		}
@@ -96,9 +66,7 @@ header, section:not(#agenda) {
 
 	& .container-fluid .row:last-child {
 		div:last-child {
-			a img:last-child {
-				margin: 0;
-			}
+			a img:last-child { margin: 0;}
 		}
 	}
 	
@@ -109,12 +77,12 @@ header, section:not(#agenda) {
 	& {
 		border: none;
 		background-color: transparent;
-		color: white;
+		color: $text-color;
 	}
 
 	& a {
 		& {
-			color: white !important;
+			color: $text-color !important;
 		}
 
 		&:hover {
@@ -125,16 +93,16 @@ header, section:not(#agenda) {
 
 
 #about, #tickets, #contact {
-	background-color: #5AC598;
-	color: white;
+	background-color: $theme-primary;
+	color: $text-color;
 }
 
 #agenda, #coc {
 	& {
-		background-color: #31357a;
+		background-color: $secondary-color;
 	}
 	&, & .text-muted {
-		color: white;
+		color: $text-color;
 	}
 }
 
@@ -160,11 +128,7 @@ header .header-content {
 		}
 
 		h2 {
-			font-size: 5 / 6 * $spacing-unit;
-		}
-
-		hr {
-			border-color: $secondary-color;
+			font-size: $spacing-unit;
 		}
 
 		.btn {
@@ -173,22 +137,41 @@ header .header-content {
 		}
 
 		.btn-primary {
-			background-color: $secondary-color;
-		}
-
-		@media screen and (min-width: 372px) {
-			.btn-primary {
-				border: 2px solid $secondary-color;
-				margin-right: $spacing-unit / 2;
-			}
+			border-color: $theme-primary;
+			background-color: $theme-primary;
 		}
 
 		.btn-secondary {
 			background-color: transparent;
-			border: 2px solid white;
+			border: 2px solid $border-color;
 		}
+	}
+}
 
-		@media screen and (max-width: 371px) {
+
+
+@media screen and (min-width: 425px) {
+	a:focus:not(#logo-link) {
+		border-bottom: 2px solid $border-color !important;
+	}
+
+	header .header-content {
+		& .header-content-inner {
+			.btn-primary {
+				border: 2px solid $theme-primary;
+				margin-right: $spacing-unit / 2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 424px) {
+	a:focus:not(#logo-link):not(.btn) {
+		border-bottom: none;
+	}
+
+	header .header-content {
+		& .header-content-inner {
 			.btn-primary {
 				margin-right: 0;
 				margin-bottom: $spacing-unit / 2;
