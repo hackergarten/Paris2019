@@ -150,7 +150,7 @@ header .header-content {
 
 
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 375px) {
 	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: 2px solid $border-color !important;
 	}
@@ -165,7 +165,7 @@ header .header-content {
 	}
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 374px) {
 	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: none;
 	}
