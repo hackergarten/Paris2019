@@ -21,7 +21,7 @@ body > * {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-a {
+a, button {
 	&, &:hover, &:active, &:focus, &:visited { 
 		outline: 0;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -151,7 +151,7 @@ header .header-content {
 
 
 @media screen and (min-width: 425px) {
-	a:focus:not(#logo-link) {
+	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: 2px solid $border-color !important;
 	}
 
