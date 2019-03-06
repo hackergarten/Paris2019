@@ -5,7 +5,7 @@
 
 $spacing-unit:     	3vw;
 $theme-primary: 	#ac2217;
-$secondary-color:	#31357a;
+$secondary-color:	#1E3A7F;
 $theme-dark: 		#222;
 $text-color:		white;
 $border-color:		white;
@@ -35,43 +35,13 @@ a, button {
 
 .text-primary { color: $text-color;}
 
-hr { border-color: $border-color;}
+hr { 
+	border-color: $border-color;
 
-#bs-example-navbar-collapse-1 {
-	border: none;
-	text-align: right;
-
-	li { height: 5vh;}
-}
-
-header, section:not(#agenda) {
-	& {
-		display: flex;
-		min-height: 100%;
-		align-items: center !important;
+	h2 + & {
+		margin-bottom: 2vh;
 	}
 }
-
-#contact {
-	a {
-		display: block;
-
-		img {
-			background-color: $pic-bg-color;
-			border: 2px solid $secondary-color;
-			display: inline-block;
-			margin-bottom: 3vh;
-		}
-	}
-
-	& .container-fluid .row:last-child {
-		div:last-child {
-			a img:last-child { margin: 0;}
-		}
-	}
-	
-}
-
 
 #mainNav {
 	& {
@@ -89,20 +59,20 @@ header, section:not(#agenda) {
 			color: $secondary-color;
 		}
 	}
-}
 
+	#bs-example-navbar-collapse-1 {
+		border: none;
+		text-align: right;
 
-#about, #tickets, #contact {
-	background-color: $theme-primary;
-	color: $text-color;
-}
-
-#agenda, #coc {
-	& {
-		background-color: $secondary-color;
+		li { height: 3vh;}
 	}
-	&, & .text-muted {
-		color: $text-color;
+}
+
+header, section:not(#agenda) {
+	& {
+		display: flex;
+		min-height: 100%;
+		align-items: center !important;
 	}
 }
 
@@ -146,6 +116,55 @@ header .header-content {
 			border: 2px solid $border-color;
 		}
 	}
+}
+
+
+#about, #tickets, #contact {
+	background-color: $theme-primary;
+	color: $text-color;
+}
+
+#agenda, #coc {
+	& {
+		background-color: $secondary-color;
+	}
+	&, & .text-muted {
+		color: $text-color;
+	}
+}
+
+#about {
+	.btn {
+		background-color: transparent;
+		border-radius: 0;
+		color: white;
+		border: 2px solid white;
+	}
+}
+
+#agenda {
+	.row > div {
+		margin-bottom: 3vh;
+	}
+}
+
+#contact {
+	a {
+		display: block;
+
+		img {
+			background-color: $pic-bg-color;
+			display: inline-block;
+			margin-bottom: 3vh;
+		}
+	}
+
+	& .container-fluid .row:last-child {
+		div:last-child {
+			a img:last-child { margin: 0;}
+		}
+	}
+	
 }
 
 
