@@ -1,4 +1,4 @@
 # hack.commit.push
 
-Please visit [the website](http://hackergarten.net/Paris2019).
+Please visit [the website](https://hack-commit-pu.sh).
 
