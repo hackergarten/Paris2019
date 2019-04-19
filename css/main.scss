@@ -91,7 +91,7 @@ header {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				margin-right: 1vw;
+				margin-right: 2vw;
 
 				p {
 					text-align: right;
@@ -100,7 +100,8 @@ header {
 			}
 
 			img {
-				max-height: 90px;
+				min-height: 50px;
+				max-height: 5vw;
 				border: 1px solid $border-color
 			}
 		}
@@ -212,8 +213,6 @@ section {
 	
 }
 
-
-
 @media screen and (min-width: 375px) {
 	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: 2px solid $border-color !important;
@@ -230,6 +229,7 @@ section {
 }
 
 @media screen and (max-width: 374px) {
+	#techandcode p { font-size: 3vw;}
 	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: none;
 	}
