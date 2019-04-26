@@ -44,6 +44,25 @@ hr {
 	}
 }
 
+
+
+section {
+	&, & .text-muted {
+		color: $text-color;
+	}
+}
+
+body>section:nth-child(odd) {
+	background-color: $theme-primary;
+	color: $text-color;
+}
+
+body>section:nth-child(even) {
+	& {
+		background-color: $secondary-color;
+	}
+}
+
 #mainNav {
 	& {
 		border: none;
@@ -151,25 +170,14 @@ header .header-content {
 	}
 }
 
-section {
-	&, & .text-muted {
-		color: $text-color;
-	}
-}
-
-#about, #agenda, #coc {
-	background-color: $theme-primary;
-	color: $text-color;
-}
-
-#venue, #tickets, #contact {
-	& {
-		background-color: $secondary-color;
-	}
-}
-
 #venue {
-	a {color: white !important;}
+	a {
+		color: white !important;
+
+		&.localization {
+			text-decoration: underline;
+		}
+	}
 	iframe, dl {
 		text-align: left;
 		width: 100% !important;
