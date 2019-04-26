@@ -44,6 +44,25 @@ hr {
 	}
 }
 
+
+
+section {
+	&, & .text-muted {
+		color: $text-color;
+	}
+}
+
+body>section:nth-child(odd) {
+	background-color: $theme-primary;
+	color: $text-color;
+}
+
+body>section:nth-child(even) {
+	& {
+		background-color: $secondary-color;
+	}
+}
+
 #mainNav {
 	& {
 		border: none;
@@ -78,7 +97,7 @@ header, section:not(#agenda) {
 }
 
 header {	
-	#sponsors {
+	#host {
 		position: absolute;
 		bottom: 6vh;
 		padding: calc(6vh-50px);
@@ -151,25 +170,14 @@ header .header-content {
 	}
 }
 
-section {
-	&, & .text-muted {
-		color: $text-color;
-	}
-}
-
-#about, #agenda, #coc {
-	background-color: $theme-primary;
-	color: $text-color;
-}
-
-#venue, #tickets, #contact {
-	& {
-		background-color: $secondary-color;
-	}
-}
-
 #venue {
-	a {color: white !important;}
+	a {
+		color: white !important;
+
+		&.localization {
+			text-decoration: underline;
+		}
+	}
 	iframe, dl {
 		text-align: left;
 		width: 100% !important;
@@ -194,14 +202,14 @@ section {
 	}
 }
 
-#contact {
+#contact, #sponsors {
 	a {
 		display: block;
 
 		img {
-			background-color: $pic-bg-color;
 			display: inline-block;
 			margin-bottom: 3vh;
+			max-width: 100%;
 		}
 	}
 
@@ -211,6 +219,27 @@ section {
 		}
 	}
 	
+}
+
+#contact {
+	a {
+		img {
+			background-color: $pic-bg-color;
+		}
+	}
+}
+
+#sponsors {
+	.sponsor-tbd {
+		height: 140px;
+
+		p {
+			border: 2px dashed $border-color;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
 }
 
 @media screen and (min-width: 375px) {
