@@ -26,6 +26,7 @@ a, button {
 		outline: 0;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-tap-highlight-color: transparent;
+		text-decoration: none;
 	}
 
 	&:focus:not(#logo-link) {
@@ -76,6 +77,38 @@ header, section:not(#agenda) {
 	}
 }
 
+header {	
+	#sponsors {
+		position: absolute;
+		bottom: 6vh;
+		padding: calc(6vh-50px);
+		right: 3vw;
+
+		#techandcode {
+			display: flex;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-right: 2vw;
+
+				p {
+					text-align: right;
+					margin-bottom: 0;
+				}
+			}
+
+			img {
+				min-height: 50px;
+				max-height: 5vw;
+				border: 1px solid $border-color
+			}
+		}
+		
+	}
+}
+
 header .header-content {
 	& {
 		padding: 0;
@@ -118,18 +151,31 @@ header .header-content {
 	}
 }
 
+section {
+	&, & .text-muted {
+		color: $text-color;
+	}
+}
 
-#about, #tickets, #contact {
+#about, #agenda, #coc {
 	background-color: $theme-primary;
 	color: $text-color;
 }
 
-#agenda, #coc {
+#venue, #tickets, #contact {
 	& {
 		background-color: $secondary-color;
 	}
-	&, & .text-muted {
-		color: $text-color;
+}
+
+#venue {
+	a {color: white !important;}
+	iframe, dl {
+		text-align: left;
+		width: 100% !important;
+	}
+	dl {
+		font-size: 16px;
 	}
 }
 
@@ -138,7 +184,7 @@ header .header-content {
 		background-color: transparent;
 		border-radius: 0;
 		color: white;
-		border: 2px solid white;
+		border: 2px solid $border-color;
 	}
 }
 
@@ -167,8 +213,6 @@ header .header-content {
 	
 }
 
-
-
 @media screen and (min-width: 375px) {
 	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: 2px solid $border-color !important;
@@ -185,6 +229,7 @@ header .header-content {
 }
 
 @media screen and (max-width: 374px) {
+	#techandcode p { font-size: 3vw;}
 	a:focus:not(#logo-link):not(.btn) {
 		border-bottom: none;
 	}
