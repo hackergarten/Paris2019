@@ -78,7 +78,7 @@ header, section:not(#agenda) {
 }
 
 header {	
-	#sponsors {
+	#host {
 		position: absolute;
 		bottom: 6vh;
 		padding: calc(6vh-50px);
@@ -194,14 +194,14 @@ section {
 	}
 }
 
-#contact {
+#contact, #sponsors {
 	a {
 		display: block;
 
 		img {
-			background-color: $pic-bg-color;
 			display: inline-block;
 			margin-bottom: 3vh;
+			max-width: 100%;
 		}
 	}
 
@@ -211,6 +211,27 @@ section {
 		}
 	}
 	
+}
+
+#contact {
+	a {
+		img {
+			background-color: $pic-bg-color;
+		}
+	}
+}
+
+#sponsors {
+	.sponsor-tbd {
+		height: 140px;
+
+		p {
+			border: 2px dashed $border-color;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
 }
 
 @media screen and (min-width: 375px) {
