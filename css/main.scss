@@ -203,15 +203,29 @@ header .header-content {
 }
 
 #contact, #sponsors {
-	a {
-		display: block;
+	.row {
+		div {
+			min-height: 140px;
 
-		img {
-			display: inline-block;
-			margin-bottom: 3vh;
-			max-width: 100%;
+			a {
+				border: none;
+
+				img {
+					display: inline-block;
+                    margin-bottom: 3vh;
+					max-width: 100%;
+				}
+
+				img[src$=".svg"] {
+					width: 140px;
+					padding-top:47px;
+				}
+			}
+
+			
 		}
 	}
+	
 
 	& .container-fluid .row:last-child {
 		div:last-child {
