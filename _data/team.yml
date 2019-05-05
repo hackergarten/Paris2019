@@ -1,0 +1,31 @@
+core:
+  - name: Andres
+    twitter: aalmiray
+    picture: andres.png
+    short_desc: Developer Advocate at Gradle
+
+  - name: Florent
+    twitter: fbiville
+    picture: florent.png
+    short_desc: Developer at Pivotal
+
+  - name: Hervé
+    twitter: hboutemy
+    picture: herve.png
+    short_desc: Solutions Architect at Sonatype
+
+  - name: Michael
+    twitter: mesirii
+    picture: michael.png
+    short_desc: GraphAddict at Neo4j
+
+support:
+  - name: Jessica(t)
+    twitter: jessicagantier
+    picture: jessica.png
+    short_desc: Product Designer at Pivotal
+
+  - name: Dilek
+    twitter: dyild
+    picture: dilek.png
+    short_desc: Freelance Translator and Marketer

@@ -1,0 +1,12 @@
+- name: Tech And Code Factory
+  url: https://www.techandcodefactory.fr/
+  picture: techandcodefactory-logo.png
+- name: Mozilla
+  url: https://www.mozilla.org
+  picture: mozilla.png
+- name: Swicket
+  url: https://swicket.io/
+  picture: swicket.png
+- name: To Be Announced
+  url: mailto:{{site.email}}?subject=Interested%20in%20sponsorship
+  picture: sponsor-tbd.png
