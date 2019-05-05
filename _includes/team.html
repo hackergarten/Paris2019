@@ -1,34 +1,14 @@
-<section id="contact">
-    <div class="container-fluid text-center">
-        <div class="row no-gutter">
-            <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="section-heading">Reach Out To The Organizers!</h2>
-                <hr class="light">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5 col-sm-offset-1">
-                <a rel="noopener" target="_blank" href="https://twitter.com/aalmiray">
-                    <img class="wow bounceIn" alt="Organizer Andres" title="Andres" src="img/andres.png" />
-                </a>
-            </div>
-            <div class="col-sm-5">
-                <a rel="noopener" target="_blank" href="https://twitter.com/fbiville">
-                    <img class="wow bounceIn" alt="Organizer Florent" title="Florent" src="img/florent.png" />
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-5 col-sm-offset-1">
-                <a rel="noopener" target="_blank" href="https://twitter.com/hboutemy">
-                    <img class="wow bounceIn" alt="Organizer Hervé" title="Hervé" src="img/herve.png" />
-                </a>
-            </div>
-            <div class="col-sm-5">
-                <a rel="noopener" target="_blank" href="https://twitter.com/mesirii">
-                    <img class="wow bounceIn" alt="Organizer Michael" title="Michael" src="img/michael.png" />
-                </a>
-            </div>
-        </div>
+<section id="team">
+    <div class="container-fluid">
+    	<div class="team_group row text-center">
+    		<h2 class="section-heading">Reach Out To The Organizers!</h2>
+    		<hr class="light">
+    	</div>
+    	{% include _members.html team=site.data.team.core %}
+		<div class="team_group row text-center">
+    		<h2 class="section-heading">Special Credits</h2>
+    		<hr class="light">
+    	</div>
+    	{% include _members.html team=site.data.team.support %}
     </div>
 </section>

@@ -21,16 +21,23 @@ body > * {
 	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+abbr[title] { 
+	border: 0;
+	text-decoration: none;
+	cursor: inherit;
+}
+
 a, button {
 	&, &:hover, &:active, &:focus, &:visited { 
 		outline: 0;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
 		-webkit-tap-highlight-color: transparent;
 		text-decoration: none;
+		border: 0;
 	}
 
-	&:focus:not(#logo-link) {
-		color: $text-color;
+	&:not(#logo-link) {
+		color: $text-color !important;
 	}
 }
 
@@ -70,9 +77,13 @@ body>section:nth-child(even) {
 		color: $text-color;
 	}
 
-	& a {
+	a {
 		& {
 			color: $text-color !important;
+		}
+
+		&:not(#logo-link):focus {
+			border-bottom: 2px solid $border-color !important;
 		}
 
 		&:hover {
@@ -84,12 +95,24 @@ body>section:nth-child(even) {
 		border: none;
 		text-align: right;
 
-		li { height: 3vh;}
+		ul { 
+			max-height: 100%;
+			margin: 0;
+			li {
+				height: 30px;
+			}
+		}
+		
+
+		a:focus {
+			border-bottom: none !important;
+		}
 	}
 }
 
 header, section:not(#agenda) {
 	& {
+		padding: 10vh 4vh;
 		display: flex;
 		min-height: 100%;
 		align-items: center !important;
@@ -121,7 +144,7 @@ header {
 			img {
 				min-height: 50px;
 				max-height: 5vw;
-				border: 1px solid $border-color
+				border: 1px solid $border-color;
 			}
 		}
 		
@@ -170,6 +193,15 @@ header .header-content {
 	}
 }
 
+#about {
+	.btn {
+		background-color: transparent;
+		border-radius: 0;
+		color: white;
+		border: 2px solid $border-color;
+	}
+}
+
 #venue {
 	a {
 		color: white !important;
@@ -182,17 +214,9 @@ header .header-content {
 		text-align: left;
 		width: 100% !important;
 	}
+	iframe { box-sizing: content-box;}
 	dl {
 		font-size: 16px;
-	}
-}
-
-#about {
-	.btn {
-		background-color: transparent;
-		border-radius: 0;
-		color: white;
-		border: 2px solid $border-color;
 	}
 }
 
@@ -202,86 +226,66 @@ header .header-content {
 	}
 }
 
-#contact, #sponsors {
-	.row {
-		div {
-			min-height: 140px;
-
-			a {
-				border: none;
-
-				img {
-					display: inline-block;
-                    margin-bottom: 3vh;
-					max-width: 100%;
-				}
-
-				img[src$=".svg"] {
-					width: 140px;
-					padding-top:47px;
-				}
-			}
-
-			
-		}
-	}
-	
-
-	& .container-fluid .row:last-child {
-		div:last-child {
-			a img:last-child { margin: 0;}
-		}
-	}
-	
+#tickets {
+	a { text-decoration: underline; }
 }
 
-#contact {
+#team, #sponsors {
+
 	a {
+		display: flex;
+		justify-content: center;
 		img {
-			background-color: $pic-bg-color;
+			max-width: 100%;
+		}
+	}
+
+	.grid_item {
+		text-align: center;
+		margin-bottom: 2vh;
+		.short_desc {
+			display: none;
+			color: $text-color;
+		}
+	}
+
+	a:hover {
+		img {
+			background-color: white;
+			opacity: 0.1;
+		}
+
+		.short_desc {
+			position: absolute;
+    		top: 50%;
+			left: 50%;
+    		transform: translate(-50%, -50%);
+    		display: inline;
+
+    		span { display: inline;}
+    		.grid_item_name { 
+    			display: block; 
+    			font-weight: bold;
+    		}
 		}
 	}
 }
 
-#sponsors {
-	.sponsor-tbd {
-		height: 140px;
-
-		p {
-			border: 2px dashed $border-color;
-			height: 100%;
-			display: flex;
-			align-items: center;
-		}
+#team {
+	.team_group:not(:first-child) {
+	    margin-top: 4vh;
 	}
+
+	img { background-color: $pic-bg-color;}
 }
 
-@media screen and (min-width: 375px) {
-	a:focus:not(#logo-link):not(.btn) {
-		border-bottom: 2px solid $border-color !important;
-	}
+@media screen and (min-width: 576px) {
 
 	header .header-content {
 		& .header-content-inner {
 			.btn-primary {
 				border: 2px solid $theme-primary;
 				margin-right: $spacing-unit / 2;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 374px) {
-	#techandcode p { font-size: 3vw;}
-	a:focus:not(#logo-link):not(.btn) {
-		border-bottom: none;
-	}
-
-	header .header-content {
-		& .header-content-inner {
-			.btn-primary {
-				margin-right: 0;
-				margin-bottom: $spacing-unit / 2;
 			}
 		}
 	}

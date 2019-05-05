@@ -1,0 +1,18 @@
+<div class="row justify-content-start align-items-center">
+    {% for member in include.team %}
+	    {% assign mod = forloop.index0 | modulo:2 %}
+		{% if mod == 0 %}
+	<div class="grid_item col-xs-12 col-sm-4 col-sm-offset-2">
+		{% else %}
+	<div class="grid_item col-xs-12 col-sm-4">
+		{% endif %}
+		<a href="https://twitter.com/{{member.twitter}}" rel="noopener" target="_blank">
+			<img class="wow bounceIn" alt="Organizer {{member.name}}" title="{{member.name}}" src="img/{{member.picture}}" />
+			<span class="short_desc">
+				<span class="grid_item_name">{{member.name}}</span>
+				<span>{{member.short_desc}}</span>
+			</span>
+		</a>
+	</div>
+	{% endfor %}
+</div>
