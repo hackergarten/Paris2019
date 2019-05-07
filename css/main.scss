@@ -11,6 +11,8 @@ $text-color:		white;
 $border-color:		white;
 $pic-bg-color:		white;
 
+$collapse-navbar-breakpoint: 880px;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
@@ -89,28 +91,32 @@ body>section:nth-child(even) {
 		&:hover {
 			color: $secondary-color;
 		}
+
 	}
 
 	#bs-example-navbar-collapse-1 {
 		border: none;
 		text-align: right;
 
+		&.in,&.collapsing{
+			background-color: darken(rgba($theme-primary, .9), 10%);
+		}
+		
 		ul { 
-			max-height: 100%;
 			margin: 0;
+			margin-bottom: 10px;
 			li {
 				height: 30px;
 			}
 		}
 		
-
 		a:focus {
 			border-bottom: none !important;
 		}
 	}
 }
 
-header, section:not(#agenda) {
+section:not(#agenda) {
 	& {
 		padding: 10vh 4vh;
 		display: flex;
@@ -120,6 +126,10 @@ header, section:not(#agenda) {
 }
 
 header {	
+	display: flex;
+	min-height: 100%;
+	align-items: center !important;
+
 	#host {
 		position: absolute;
 		bottom: 6vh;
@@ -289,4 +299,43 @@ header .header-content {
 			}
 		}
 	}
+}
+
+// courtesy of https://coderwall.com/p/wpjw4w/change-the-bootstrap-navbar-breakpoint
+@media (max-width: $collapse-navbar-breakpoint) {
+    .navbar-header {
+        float: none;
+        margin-right: -15px !important;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }
