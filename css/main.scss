@@ -181,9 +181,10 @@ header .header-content {
 		}
 
 		h1 { 
-			font-size: 4 / 3 * $spacing-unit !important;
+			font-size: 3.5 / 3 * $spacing-unit !important;
 			font-weight: normal;
 			padding-bottom: $spacing-unit;
+			text-transform: inherit;
 		}
 
 		h2 {
