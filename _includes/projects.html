@@ -1,0 +1,32 @@
+<section id="projects">
+    <div class="container">
+        <table class="table">
+        	<tr>
+        		<th>Name</th>
+        		<th>Leads</th>
+        		<th>Description</th>
+        	</tr>
+        	{% assign projects = site.data.projects | sort: 'name' %}
+        	{% for project in projects %}
+        	<tr>
+                {% assign rowspan = project.description | size %}
+        		<td rowspan="{{rowspan}}"><a href="{{project.url}}" rel="noopener" target="_blank">{{project.name}}</a></td>
+        		<td rowspan="{{rowspan}}">{{ project.leads | map: "name" | join: ", " }}</td>
+        		{% for description in project.description %}
+                    {% assign lang = description[0] %}
+                    {% if lang != site.default_lang %}
+                        {% capture lang_attribute %}
+                         lang="{{lang}}"
+                        {% endcapture %}
+                    {% endif %}
+        		<td{{lang_attribute}}><strong>[{{description[0]}}]</strong> {{description[1]}}</td>
+            </tr>
+                {% if forloop.last == false %}
+            <tr>
+                {% endif %}
+                {% endfor %}
+        	</tr>
+        	{% endfor %}
+		</table>
+    </div>
+</section>

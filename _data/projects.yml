@@ -1,0 +1,77 @@
+- name: Apache Maven
+  url: https://maven.apache.org/
+  description:
+    en: |
+      Apache Maven is a software project management and comprehension tool. 
+      Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information. 
+  leads:
+    - name: Hervé Boutémy
+- name: Gradle
+  url: https://gradle.org/
+  description:
+    en: |
+      Gradle is an open-source <a href="https://en.wikipedia.org/wiki/Build_automation" rel="noopener" target="_blank">build automation</a> tool 
+      that is designed to be flexible enough to build almost any type of software.
+  leads:
+    - name: Andres Almiray
+- name: Kubernetes FR Docs
+  url: https://kubernetes.io/fr/docs/
+  description:
+    fr: |
+      Kubernetes (communément appelé « K8s ») est un système open source qui vise à fournir une « plate-forme permettant d'automatiser le déploiement, la montée en charge et la mise en œuvre de conteneurs d'application sur des clusters de serveurs ».
+      Nous vous proposons d’améliorer la traduction de la documentation de Kubernetes au cours de cet atelier.
+      Nous verrons les principales problématiques, le processus de revue et les outils qui servent à fournir la documentation de Kubernetes.
+  leads:
+    - name: Rémy Leone
+- name: Neo4j
+  url: https://neo4j.com
+  description:
+    en: |
+      Neo4j is a graph database platform, with native graph storage and fast processing.
+      Property graph model and Cypher query language makes it easy to understand.
+  leads:
+    - name: Michael Hunger
+- name: riff
+  url: https://projectriff.io/
+  description:
+    en: |
+      riff is the open-source Function as a Service platform of Pivotal, based on Kubernetes and Knative.
+  leads:
+    - name: Florent Biville
+- name: Groovy
+  url: http://groovy-lang.org
+  description:
+    en: |
+      Apache Groovy is a powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.
+      It integrates smoothly with any Java program, and immediately delivers to your application powerful features, including scripting capabilities, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming. 
+  leads:
+    - name: Andres Almiray
+- name: BootstrapFX
+  url: https://github.com/aalmiray/bootstrapfx
+  description:
+    en: |
+      BootstrapFX is a partial port of <a href="https://getbootstrap.com/" rel="noopener" target="_blank">Twitter Bootstrap</a> for <a href="https://openjfx.io/" rel="noopener" target="_blank">JavaFX</a>.
+      It mainly provides a CSS stylesheet that closely resembles the original while being custom tailored for JavaFX's unique CSS flavor.
+  leads:
+    - name: Andres Almiray
+- name: Kodein Framework
+  url: https://kodein.org/
+  description:
+    fr: |
+      Le Kodein Framework est un Framework open source Kotlin/Multiplatform qui vise à fournir aux développeurs d'applications mobile un ensemble de librairies haut niveau permettant la création de module métiers partagés entre les différentes plateformes mobiles supportées par Kotlin : Android, iOS, PWA.
+  leads:
+    - name: Salomon Brys
+- name: Python FR Docs
+  url: https://docs.python.org/fr/3/
+  description:
+    en: |
+      Contribute the French translation of the Python documentation.
+  leads:
+    - name: Julien Palard
+- name: Asciidoctor
+  url: https://asciidoctor.org/
+  description:
+    en: |
+      Learn to contribute to Asciidoctor: a fast text processor & publishing toolchain for converting AsciiDoc to HTML5, DocBook & more.
+  leads:
+    - name: Schalk Cronjé
