@@ -1,0 +1,28 @@
+- start: "9:00"
+  end: "10:00"
+  description: Register at the reception, meet the other attendants!
+  icon: coffee
+- start: "10:00"
+  end: "11:00"
+  description: Hear what the organizers, sponsors and project leads have to say!
+  icon: bullhorn
+- start: "11:00"
+  end: "13:00"
+  description: Join an introduction workshop or a project to work on a contribution.
+  icon: laptop
+- start: "13:00"
+  end: "14:00"
+  description: Time to rest and enjoy a good lunch.
+  icon: cutlery
+- start: "14:00"
+  end: "17:45"
+  description: Start/resume your contributions.
+  icon: fork
+- start: "17:45"
+  end: "18:15"
+  description: Let's listen to the end keynotes.
+  icon: bullhorn
+- start: "18:15"
+  end: "19:00"
+  description: Enjoy a drink and chat with other participants.
+  icon: glass
