@@ -10,8 +10,8 @@
         	{% for project in projects %}
         	<tr>
                 {% assign rowspan = project.description | size %}
-        		<td rowspan="{{rowspan}}"><a href="{{project.url}}" rel="noopener" target="_blank">{{project.name}}</a></td>
-        		<td rowspan="{{rowspan}}">{{ project.leads | map: "name" | join: ", " }}</td>
+        		<td rowspan="{{rowspan}}"><a href="{{project.url}}" rel="noopener" target="_blank">{{project.name | replace: ' ', '&nbsp;'}}</a></td>
+        		<td rowspan="{{rowspan}}">{{ project.leads | map: "name" | join: ", "  | replace: ' ', '&nbsp;' | replace: ',&nbsp; ', ', '}}</td>
         		{% for description in project.description %}
                     {% assign lang = description[0] %}
                     {% if lang != site.default_lang %}
