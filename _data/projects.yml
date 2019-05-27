@@ -82,3 +82,11 @@
       QuickPerf is a test Java open source library (Apache License, Version 2.0) that provides annotations to quickly evaluate some performance properties. 
   leads:
     - name: Jean Bisutti
+- name: Angular
+  url: https://angular.io/
+  description:
+    en: |
+      Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges.
+  leads:
+    - name: Cédric Exbrayat
+    - name: Jean-Baptiste Nizet
