@@ -75,3 +75,10 @@
       Learn to contribute to Asciidoctor: a fast text processor & publishing toolchain for converting AsciiDoc to HTML5, DocBook & more.
   leads:
     - name: Schalk Cronjé
+- name: QuickPerf
+  url: https://github.com/quick-perf/doc/wiki/QuickPerf
+  description:
+    en: |
+      QuickPerf is a test Java open source library (Apache License, Version 2.0) that provides annotations to quickly evaluate some performance properties. 
+  leads:
+    - name: Jean Bisutti
