@@ -1,12 +1,25 @@
-- name: Tech And Code Factory
-  url: https://www.techandcodefactory.fr/
-  picture: techandcodefactory-logo.png
-- name: Mozilla
-  url: https://www.mozilla.org
-  picture: mozilla.png
-- name: Swicket
-  url: https://swicket.io/
-  picture: swicket.png
-- name: To Be Announced
-  url: mailto:{{site.email}}?subject=Interested%20in%20sponsorship
-  picture: sponsor-tbd.png
+gold:  
+  - name: 1 available slot
+    url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
+    picture: sponsor-tbd.png
+silver:
+  - name: Pivotal
+    url: https://pivotal.io/
+    picture: pivotal.png  
+  - name: 1 available slot
+    url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
+    picture: sponsor-tbd.png
+bronze: 
+  - name: 4 available slots
+    url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
+    picture: sponsor-tbd.png
+other: 
+  - name: Tech And Code Factory
+    url: https://www.techandcodefactory.fr/
+    picture: techandcodefactory-logo.png
+  - name: Mozilla
+    url: https://www.mozilla.org
+    picture: mozilla.png
+  - name: Swicket
+    url: https://swicket.io/
+    picture: swicket.png

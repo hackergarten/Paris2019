@@ -1,9 +1,24 @@
 <section id="sponsors">
     <div class="container-fluid">
         <div class="team_group row text-center">
-            <h2 class="section-heading">Sponsors</h2>
+            <h2 class="section-heading">Gold Sponsor</h2>
             <hr class="light">
         </div>
-        {% include _sponsors.html sponsors=site.data.sponsors %}
+        {% include _sponsors.html sponsors=site.data.sponsors.gold left-offset=4 %}
+        <div class="team_group row text-center">
+            <h2 class="section-heading">Silver Sponsors</h2>
+            <hr class="light">
+        </div>
+        {% include _sponsors.html sponsors=site.data.sponsors.silver %}
+        <div class="team_group row text-center">
+            <h2 class="section-heading">Bronze Sponsors</h2>
+            <hr class="light">
+        </div>
+        {% include _sponsors.html sponsors=site.data.sponsors.bronze left-offset=4 %}
+        <div class="team_group row text-center">
+            <h2 class="section-heading">Other Sponsors</h2>
+            <hr class="light">
+        </div>
+        {% include _sponsors.html sponsors=site.data.sponsors.other %}
     </div>
 </section>
