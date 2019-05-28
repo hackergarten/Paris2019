@@ -11,7 +11,7 @@ $text-color:		white;
 $border-color:		white;
 $pic-bg-color:		white;
 
-$collapse-navbar-breakpoint: 950px;
+$collapse-navbar-breakpoint: 1070px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -94,7 +94,7 @@ body>section:nth-child(even) {
 
 	}
 
-	#nav-twitter {
+	#nav-twitter, #nav-github {
 		font-size: 16pt;
 	}
 

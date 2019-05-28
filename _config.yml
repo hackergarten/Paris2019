@@ -11,6 +11,7 @@ default_lang: "en"
 
 twitter_username: hackcommitpush
 github_username:
+github_url: https://github.com/hackergarten/Paris2019
 
 # Build settings
 markdown: kramdown
