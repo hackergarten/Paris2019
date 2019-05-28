@@ -90,3 +90,10 @@
   leads:
     - name: Cédric Exbrayat
     - name: Jean-Baptiste Nizet
+- name: Eclipse Che
+  url: https://www.eclipse.org/che/
+  description:
+    en: |
+      Eclipse Che is a developer workspace server and cloud IDE built for teams and organizations.
+  leads:
+    - name: Sun Seng David Tan
