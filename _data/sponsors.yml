@@ -10,7 +10,10 @@ silver:
     url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
     picture: sponsor-tbd.png
 bronze: 
-  - name: 4 available slots
+  - name: Neo4j Inc.
+    url: https://neo4j.com/
+    picture: neo4j.png
+  - name: 3 available slots
     url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
     picture: sponsor-tbd.png
 other: 
