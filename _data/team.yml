@@ -19,13 +19,18 @@ core:
     picture: michael.png
     short_desc: GraphAddict at Neo4j
 
-support:
-  - name: Jessica(t)
-    twitter: jessicagantier
-    picture: jessica.png
-    short_desc: Product Designer at Pivotal
-
   - name: Dilek
     twitter: dyild
     picture: dilek.png
     short_desc: Freelance Translator and Marketer
+
+support:
+  - name: Jessica(t)
+    twitter: jessicagantier
+    picture: jessica.png
+    short_desc: Product Designer at Pivotal Labs
+
+  - name: Daniel
+    twitter: kehrlann
+    picture: daniel.png
+    short_desc: Developer at Pivotal Labs
