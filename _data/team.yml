@@ -4,6 +4,11 @@ core:
     picture: andres.png
     short_desc: Developer Advocate at Gradle
 
+  - name: Dilek
+    twitter: dyild
+    picture: dilek.png
+    short_desc: Freelance Translator and Marketer
+
   - name: Florent
     twitter: fbiville
     picture: florent.png
@@ -19,18 +24,13 @@ core:
     picture: michael.png
     short_desc: GraphAddict at Neo4j
 
-  - name: Dilek
-    twitter: dyild
-    picture: dilek.png
-    short_desc: Freelance Translator and Marketer
-
 support:
-  - name: Jessica(t)
-    twitter: jessicagantier
-    picture: jessica.png
-    short_desc: Product Designer at Pivotal Labs
-
   - name: Daniel
     twitter: kehrlann
     picture: daniel.png
     short_desc: Developer at Pivotal Labs
+
+  - name: Jessica(t)
+    twitter: jessicagantier
+    picture: jessica.png
+    short_desc: Product Designer at Pivotal Labs
