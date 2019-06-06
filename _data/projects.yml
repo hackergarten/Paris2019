@@ -18,7 +18,6 @@
   url: https://kubernetes.io/fr/docs/
   description:
     fr: |
-      Kubernetes (communément appelé « K8s ») est un système open source qui vise à fournir une « plate-forme permettant d'automatiser le déploiement, la montée en charge et la mise en œuvre de conteneurs d'application sur des clusters de serveurs ».
       Nous vous proposons d’améliorer la traduction de la documentation de Kubernetes au cours de cet atelier.
       Nous verrons les principales problématiques, le processus de revue et les outils qui servent à fournir la documentation de Kubernetes.
   leads:
@@ -43,7 +42,6 @@
   description:
     en: |
       Apache Groovy is a powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.
-      It integrates smoothly with any Java program, and immediately delivers to your application powerful features, including scripting capabilities, Domain-Specific Language authoring, runtime and compile-time meta-programming and functional programming. 
   leads:
     - name: Andres Almiray
 - name: BootstrapFX
@@ -97,3 +95,12 @@
       Eclipse Che is a developer workspace server and cloud IDE built for teams and organizations.
   leads:
     - name: Sun Seng David Tan
+- name: Open Liberty
+  url: https://openliberty.io/
+  description:
+    en: |
+      Open Liberty is a fast, lightweight, open source Java runtime environment, ideal for cloud-native applications and microservices.
+  leads:
+    - name: Joseph Chacko
+    - name: Charlie Parker
+    - name: Andrew Rouse
