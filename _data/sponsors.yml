@@ -20,6 +20,9 @@ other:
   - name: Tech And Code Factory
     url: https://www.techandcodefactory.fr/
     picture: techandcodefactory-logo.png
+  - name: Clever Cloud
+    url: https://www.clever-cloud.com
+    picture: clevercloud.png
   - name: Mozilla
     url: https://www.mozilla.org
     picture: mozilla.png
