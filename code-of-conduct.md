@@ -6,7 +6,7 @@ Participants or sponsors violating these rules will be sanctioned or expelled by
 
 Any form of written or verbal communication or direct actions that can be harassing to any participant or staff is not allowed at this event. 
 
-Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of activities; inappropriate physical contact; and unwelcome sexual attention. 
+Harassment includes offensive verbal comments related to age, gender, sexual orientation, disability, physical appearance, body size, race, religion; sexual images in public spaces; deliberate intimidation; stalking; following; harassing photography or recording; sustained disruption of activities; inappropriate physical contact; and unwelcome sexual attention. 
 
 We expect **everyone** to follow these rules at all times at the main event venue and event-related social events. 
 
