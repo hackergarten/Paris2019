@@ -8,7 +8,7 @@
   icon: bullhorn
 - start: "11:00"
   end: "13:00"
-  description: Join a project and work on a contribution.
+  description: Attend the Git workshop or join a project and work on a contribution.
   icon: laptop
 - start: "13:00"
   end: "14:00"
