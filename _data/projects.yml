@@ -104,3 +104,10 @@
     - name: Joseph Chacko
     - name: Charlie Parker
     - name: Andrew Rouse
+- name: GNOS
+  url: https://gnos.in/
+  description:
+    en: |
+      GNOS is a developer/hacker-focused Ubuntu remix featuring root ZFS, full-disk-encryption, uniform dark mode, many privacy tools, a comprehensive & curated apps collection and an extensive CLI toolkit.
+  leads:
+    - name: Elias
