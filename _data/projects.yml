@@ -66,6 +66,7 @@
       Contribute the French translation of the Python documentation.
   leads:
     - name: Julien Palard
+    - name: Jules Lasne
 - name: Asciidoctor
   url: https://asciidoctor.org/
   description:
