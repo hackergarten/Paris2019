@@ -11,7 +11,7 @@ $text-color:		white;
 $border-color:		white;
 $pic-bg-color:		white;
 
-$collapse-navbar-breakpoint: 1070px;
+$collapse-navbar-breakpoint: 990px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -239,10 +239,6 @@ header .header-content {
 	.row > div {
 		margin-bottom: 3vh;
 	}
-}
-
-#tickets {
-	a { text-decoration: underline; }
 }
 
 #projects {
