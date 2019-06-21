@@ -1,21 +1,12 @@
 gold:  
-  - name: 1 available slot
-    url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
-    picture: sponsor-tbd.png
 silver:
   - name: Pivotal
     url: https://pivotal.io/
     picture: pivotal.png  
-  - name: 1 available slot
-    url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
-    picture: sponsor-tbd.png
 bronze: 
   - name: Neo4j Inc.
     url: https://neo4j.com/
     picture: neo4j.png
-  - name: 3 available slots
-    url: mailto:|SITE_EMAIL|?subject=Interested%20in%20sponsorship
-    picture: sponsor-tbd.png
 other: 
   - name: Tech And Code Factory
     url: https://www.techandcodefactory.fr/

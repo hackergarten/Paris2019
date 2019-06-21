@@ -1,20 +1,22 @@
 <section id="sponsors">
     <div class="container-fluid">
+        {% comment %}<!-- hide empty block -->
         <div class="team_group row text-center">
             <h2 class="section-heading">Gold Sponsor</h2>
             <hr class="light">
         </div>
         {% include _sponsors.html sponsors=site.data.sponsors.gold left-offset=4 %}
+        {% endcomment %}
         <div class="team_group row text-center">
             <h2 class="section-heading">Silver Sponsors</h2>
             <hr class="light">
         </div>
-        {% include _sponsors.html sponsors=site.data.sponsors.silver %}
+        {% include _sponsors.html sponsors=site.data.sponsors.silver left-offset=4 %}
         <div class="team_group row text-center">
             <h2 class="section-heading">Bronze Sponsors</h2>
             <hr class="light">
         </div>
-        {% include _sponsors.html sponsors=site.data.sponsors.bronze %}
+        {% include _sponsors.html sponsors=site.data.sponsors.bronze left-offset=4 %}
         <div class="team_group row text-center">
             <h2 class="section-heading">Other Sponsors</h2>
             <hr class="light">
