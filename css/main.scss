@@ -191,6 +191,15 @@ header .header-content {
 			font-size: $spacing-unit;
 		}
 
+		h3 {
+			font-size: $spacing-unit * 3/5;
+		}
+
+		iframe {
+			width: 49vw;
+			height: 27.5vw;
+		}
+
 		.btn {
 			color: white;
 			border-radius: 0;
