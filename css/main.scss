@@ -11,7 +11,7 @@ $text-color:		white;
 $border-color:		white;
 $pic-bg-color:		white;
 
-$collapse-navbar-breakpoint: 990px;
+$collapse-navbar-breakpoint: 1030px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -189,6 +189,15 @@ header .header-content {
 
 		h2 {
 			font-size: $spacing-unit;
+		}
+
+		h3 {
+			font-size: $spacing-unit * 3/5;
+		}
+
+		iframe {
+			width: 49vw;
+			height: 27.5vw;
 		}
 
 		.btn {
