@@ -3,7 +3,17 @@
   description:
     en: |
       Apache Maven is a software project management and comprehension tool. 
-      Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information. 
+      Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.<br/><br/>Contributions:
+      <ul>
+        <li><a href="https://issues.apache.org/jira/browse/MSKINS-107">https://issues.apache.org/jira/browse/MSKINS-107</a></li>
+        <li><a href="https://issues.apache.org/jira/browse/DOXIATOOLS-59">https://issues.apache.org/jira/browse/DOXIATOOLS-59</a></li>
+        <li><a href="https://issues.apache.org/jira/browse/MNGSITE-353">https://issues.apache.org/jira/browse/MNGSITE-353</a></li>
+        <li><a href="https://issues.apache.org/jira/browse/MSKINS-97">https://issues.apache.org/jira/browse/MSKINS-97</a></li>
+        <li>How to get full Maven sources on Windows, given Google Repo does not work here.</li>
+        <li>Check of pgp signatures for plugins.</li>
+        <li>Reproducible Builds force archive entries timestamp in plexus-archiver: explain/review/improve PR #113 in light of pre-existing PR #49.</li>
+        <li>Jansi improvements explanations/review (see PR 146 to 153).</li>
+      </ul>
   leads:
     - name: Hervé Boutemy
 - name: Gradle
@@ -11,7 +21,10 @@
   description:
     en: |
       Gradle is an open-source <a href="https://en.wikipedia.org/wiki/Build_automation" rel="noopener" target="_blank">build automation</a> tool 
-      that is designed to be flexible enough to build almost any type of software.
+      that is designed to be flexible enough to build almost any type of software.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/gradle/kotlin-dsl/pull/1386">https://github.com/gradle/kotlin-dsl/pull/1386</a></li>
+      </ul>
   leads:
     - name: Andres Almiray
 - name: Kubernetes FR Docs
@@ -19,7 +32,21 @@
   description:
     fr: |
       Nous vous proposons d’améliorer la traduction de la documentation de Kubernetes au cours de cet atelier.
-      Nous verrons les principales problématiques, le processus de revue et les outils qui servent à fournir la documentation de Kubernetes.
+      Nous verrons les principales problématiques, le processus de revue et les outils qui servent à fournir la documentation de Kubernetes.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/kubernetes/website/pull/14907">https://github.com/kubernetes/website/pull/14907</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14908">https://github.com/kubernetes/website/pull/14908</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14909">https://github.com/kubernetes/website/pull/14909</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14911">https://github.com/kubernetes/website/pull/14911</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14912">https://github.com/kubernetes/website/pull/14912</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14914">https://github.com/kubernetes/website/pull/14914</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14915">https://github.com/kubernetes/website/pull/14915</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14918">https://github.com/kubernetes/website/pull/14918</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14919">https://github.com/kubernetes/website/pull/14919</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14920">https://github.com/kubernetes/website/pull/14920</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14921">https://github.com/kubernetes/website/pull/14921</a></li>
+          <li><a href="https://github.com/kubernetes/website/pull/14951">https://github.com/kubernetes/website/pull/14951</a></li>
+      </ul>
   leads:
     - name: Rémy Leone
 - name: Neo4j
@@ -34,14 +61,31 @@
   url: https://projectriff.io/
   description:
     en: |
-      riff is the open-source Function as a Service platform of Pivotal, based on Kubernetes and Knative.
+      riff is the open-source Function as a Service platform of Pivotal, based on Kubernetes and Knative.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/projectriff/riff/commit/fbe8ef6957d3e6400de325f958dbce3103b3019b">https://github.com/projectriff/riff/commit/fbe8ef6957d3e6400de325f958dbce3103b3019b</a></li>
+      </ul>
+  leads:
+    - name: Florent Biville
+- name: Headache
+  url: https://github.com/fbiville/headache
+  description:
+    en: |
+      Utility to manage license headers in source files .<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/fbiville/headache/commit/476353c6f68896e80433dea4cfaaf28b2c28398d">https://github.com/fbiville/headache/commit/476353c6f68896e80433dea4cfaaf28b2c28398d</a></li>
+      </ul>
   leads:
     - name: Florent Biville
 - name: Groovy
   url: http://groovy-lang.org
   description:
     en: |
-      Apache Groovy is a powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.
+      Apache Groovy is a powerful, optionally typed and dynamic language, with static-typing and static compilation capabilities, for the Java platform aimed at improving developer productivity thanks to a concise, familiar and easy to learn syntax.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://issues.apache.org/jira/browse/GROOVY-9175">https://issues.apache.org/jira/browse/GROOVY-9175</a></li>
+          <li><a href="https://github.com/apache/groovy/pull/956">https://github.com/apache/groovy/pull/956</a></li>
+      </ul>
   leads:
     - name: Andres Almiray
 - name: BootstrapFX
@@ -71,21 +115,36 @@
   url: https://asciidoctor.org/
   description:
     en: |
-      Learn to contribute to Asciidoctor: a fast text processor & publishing toolchain for converting AsciiDoc to HTML5, DocBook & more.
+      Learn to contribute to Asciidoctor: a fast text processor & publishing toolchain for converting AsciiDoc to HTML5, DocBook & more.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/asciidoctor/asciidoctor-gradle-plugin/pull/402">https://github.com/asciidoctor/asciidoctor-gradle-plugin/pull/402</a></li>
+      </ul>
   leads:
     - name: Schalk Cronjé
 - name: QuickPerf
   url: https://github.com/quick-perf/doc/wiki/QuickPerf
   description:
     en: |
-      QuickPerf is a test Java open source library (Apache License, Version 2.0) that provides annotations to quickly evaluate some performance properties. 
+      QuickPerf is a test Java open source library (Apache License, Version 2.0) that provides annotations to quickly evaluate some performance properties.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/quick-perf/quickperf/pull/1">https://github.com/quick-perf/quickperf/pull/1</a></li>
+          <li><a href="https://github.com/quick-perf/quickperf/pull/2">https://github.com/quick-perf/quickperf/pull/2</a></li>
+      </ul>
   leads:
     - name: Jean Bisutti
 - name: Angular
   url: https://angular.io/
   description:
     en: |
-      Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges.
+      Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges.<br/><br/>Contributions:
+      <ul>
+          <li><a href="https://github.com/angular/angular/pull/31070">https://github.com/angular/angular/pull/31070</a></li>
+          <li><a href="https://github.com/angular/angular/pull/31072">https://github.com/angular/angular/pull/31072</a></li>
+          <li><a href="https://github.com/angular/angular-cli/pull/14785">https://github.com/angular/angular-cli/pull/14785</a></li>
+          <li><a href="https://github.com/angular/angular-cli/pull/14788">https://github.com/angular/angular-cli/pull/14788</a></li>
+          <li><a href="https://github.com/angular/angular-cli/issues/13681">https://github.com/angular/angular-cli/issues/13681</a></li>
+          <li><a href="https://github.com/angular/angular-cli/issues/13668">https://github.com/angular/angular-cli/issues/13668</a></li>
+      </ul>
   leads:
     - name: Cédric Exbrayat
     - name: Jean-Baptiste Nizet
